@@ -10,15 +10,15 @@ export default function Home() {
     <main className={styles.main}>
       <section className={`${styles.intro_cont} ${styles.round_edge}`}>
         <section className={styles.headline_cont}>
-          <h1 style={{ fontSize: "2rem" }}>Hi, my name is Jen Nguyen.</h1>
-          <h2 style={{ fontSize: "4.5rem" }}>I&#39;m a front-end developer</h2>
+          <h1>Hi, my name is Jen Nguyen.</h1>
+          <h2>I&#39;m a front-end developer</h2>
           <p style={{ fontSize: "1.2rem" }}>
             passionate about creating digital experiences with usability in
             mind.{" "}
           </p>
           <Link className={styles.resume_btn} href="files/resume.pdf" locale={false} target="_blank">My Resume</Link>
         </section>
-        <Image src={profilePic} alt="peeps-profile-pic" />
+        <Image src={profilePic} alt="peeps-profile-pic" className={styles.peep_img}/>
       </section>
 
       {/**/}
@@ -330,9 +330,9 @@ export default function Home() {
           web! <br />
           Once front-end sparked my interest, I continue to hone my craft as a
           developer by building projects that focuses on responsiveness and
-          streamlining user experience! I have interned for BlueCross BlueShield
-          SC, where I was able gain experience in DevOps and learned CI/CD. I
-          recently created a website for the U.S. Army Central that streamline
+          streamlining user experience! I have interned for <b>BlueCross BlueShield
+          SC</b>, where I was able gain experience in DevOps and learned CI/CD. I
+          recently created a website for the <b>U.S. Army Central</b> that streamline
           the housing application process. These valuable experiences allowed me
           to grow as a developer and I&#39;m ready to embark on my next learning
           journey. <br />
@@ -348,7 +348,7 @@ export default function Home() {
         <p className={styles.contact_para}>
           I&#39;m currently open to front-end development positions. If you have
           any opportunities or projects that I would be a great fit for, feel
-          free to reach me at <span>jennifernguyen0000@gmail.com</span>. Or drop
+          free to reach me at <b>jennifernguyen0000@gmail.com</b>. Or drop
           me a message on <span>LinkedIn</span>. I will be delighted to talk to
           you!
         </p>

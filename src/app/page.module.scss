@@ -1,8 +1,7 @@
 @import "./styles/mixin.scss";
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&display=swap");
 @import url("https://fonts.cdnfonts.com/css/open-sauce-one");
-@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap");
 
 .main {
   display: flex;
@@ -18,14 +17,17 @@
   justify-content: space-evenly;
 }
 
+
 .headline_cont {
   text-align: left;
   line-height: 1.5;
   h1 {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
     font-weight: 400;
   }
   h2 {
     font-family: "Archivo", sans-serif;
+    font-size: clamp(3.5rem, 2.5vw, 4.5rem);
   }
 }
 
@@ -87,120 +89,166 @@
   @include button;
 }
 
-
 .about_me_cont {
-    background-color: white;
-    p {
-        line-height: 2;
-        span {
-          font-family: 'Gamja Flower', cursive;
-        }
+  background-color: white;
+  p {
+    line-height: 2;
+    span {
+      font-family: "Gamja Flower", cursive;
     }
+  }
 }
 
 .contact_cont {
-    background-color: #a388ee;
-    margin-block-end: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    p:first-child {
-        font-family: "Archivo", sans-serif;
-        font-size: 4rem;
-        font-weight: 800;
-    }
-    .contact_para {
+  background-color: #a388ee;
+  margin-block-end: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  p:first-child {
+    font-family: "Archivo", sans-serif;
+    font-size: 4rem;
+    font-weight: 800;
+  }
+  .contact_para {
     text-align: center;
     line-height: 1.5;
     width: 50%;
     font-size: 1.2rem;
+  }
 }
-}
-
 
 .project_divider {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    a {
-        font-size: 1.2rem;
-        padding: 0.5rem;
-        @include button;
-        background: url(./img/arrow.svg) no-repeat #a388ee;
-        padding-right: 2rem;
-        background-position: 110px 10px;
-    }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    @include button;
+    background: url(./img/arrow.svg) no-repeat #a388ee;
+    padding-right: 2rem;
+    background-position: 110px 10px;
+  }
 }
 .projects_cont {
-    background-color: white;
-    display: flex;
-    background: url(./img/grainy2.jpg) no-repeat;
-    align-items: center;
-    justify-content: center;
-    background-size: 100% 175%;
-    padding: 0;
-    .project_title {
-        font-size: 2rem;
-        font-weight: 500;
-    }
+  background-color: white;
+  display: flex;
+  background: url(./img/grainy2.jpg) no-repeat;
+  align-items: center;
+  justify-content: center;
+  background-size: 100% 175%;
+  padding: 0;
+  .project_title {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    width: 100%;
+    font-weight: 500;
+  }
 
-    .project_desc {
+  .project_desc {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    line-height: 2;
+    gap: 1em;
+  }
+
+  .project_action {
+    display: flex;
+    gap: 1em;
+    li {
+      list-style-type: none;
+      @include button;
       padding: 1rem;
       display: flex;
-      flex-direction: column;
-      width: 50%;
-      line-height: 2;
-      gap: 1em;
+      align-items: center;
+      gap: 0.5rem;
     }
+  }
 
-    .project_action {
-      display: flex;
-      gap: 1em;
-      li {
-        list-style-type: none;
-        @include button;
-        padding: 1rem;
-        display: flex;
-        align-items: center;
-        gap: 0.5rem; 
-      }
-    }
+  .project_stacks {
+    display: flex;
+    list-style-type: "✦ ";
+    margin-inline-start: 1rem;
+    gap: 1.5em;
+  }
 
-    .project_stacks {
-        display: flex;
-        list-style-type: "✦ ";
-        margin-inline-start: 1rem;
-        gap: 1.5em;
-    }
+  .project_pic {
+    width: 40%;
+    object-fit: contain;
+    height: 100%;
+  }
 
-    .project_pic {
-      width: 40%;
-      object-fit: contain;
-      height: 100%;
+  .project_more {
+    font-size: 1.2rem;
+    background: url(./img/arrow.svg) no-repeat;
+    background-position: 107px 10px;
+    width: fit-content;
+    padding-right: 2rem;
+    &:hover {
+      animation: 0.7s INDENT ease-in infinite;
     }
-
-    .project_more {
-      font-size: 1.2rem;
-      background: url(./img/arrow.svg) no-repeat;
-      background-position: 107px 10px;
-      width: fit-content;
-      padding-right: 2rem;
-      &:hover {
-        animation: 0.7s INDENT ease-in infinite;
-      }
-    }
+  }
 }
-
 
 .skills_icon {
   width: 50px;
   height: 50px;
 }
 
-
 @keyframes INDENT {
-  0%   { margin-left:  0; }
-  50% { margin-left: 5px; }
-  100% { margin-left:  0; }
+  0% {
+    margin-left: 0;
+  }
+  50% {
+    margin-left: 5px;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 45rem) {
+  .skills_cont {
+    display: block;
+  }
+
+  .skills_cont_child {
+    margin-block-start: 0.5rem;
+  }
+
+  .project_divider {
+    a {
+      background-position: 95px 20px;
+    }
+  }
+
+  .project_pic {
+    display: none;
+  }
+
+  .projects_cont {
+    .project_desc {
+      width: 100%;
+    }
+    .project_stacks {
+    display: block;
+    columns: 2;
+  }
+  }
+
+  .contact_cont {
+    p:first-child {
+      text-align: center;
+    }
+    .contact_para {
+      width: 100%;
+    }
+  }
+  .peep_img {
+    display: none;
+  }
+  
 }
