@@ -6,7 +6,7 @@ import haa from "./img/polaroid2.png";
 import pockeity from "./img/polaroid1.png";
 import Link from "next/link";
 
-import flower from './img/flower.svg'
+import flower from "./img/flower.svg";
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -18,9 +18,20 @@ export default function Home() {
             passionate about creating digital experiences with usability in
             mind.{" "}
           </p>
-          <Link className={styles.resume_btn} href="files/resume.pdf" locale={false} target="_blank">My Resume</Link>
+          <Link
+            className={styles.resume_btn}
+            href="files/resume.pdf"
+            locale={false}
+            target="_blank"
+          >
+            My Resume
+          </Link>
         </section>
-        <Image src={profilePic} alt="peeps-profile-pic" className={styles.peep_img}/>
+        <Image
+          src={profilePic}
+          alt="peeps-profile-pic"
+          className={styles.peep_img}
+        />
       </section>
 
       {/**/}
@@ -39,17 +50,17 @@ export default function Home() {
             <polyline
               fill="none"
               stroke="#000"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="24"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="24"
               points="64 88 16 128 64 168"
             ></polyline>
             <polyline
               fill="none"
               stroke="#000"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="24"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="24"
               points="192 88 240 128 192 168"
             ></polyline>
             <line
@@ -59,9 +70,9 @@ export default function Home() {
               y2="216"
               fill="none"
               stroke="#000"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="24"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="24"
             ></line>
           </svg>
           <p className={styles.skills_title}>Languages</p>
@@ -102,10 +113,10 @@ export default function Home() {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            fill-rule="evenodd"
-            stroke-linejoin="round"
-            stroke-miterlimit="2"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            strokeLinejoin="round"
+            strokeMiterlimit="2"
+            clipRule="evenodd"
             viewBox="0 0 32 32"
             id="tools"
             className={styles.skills_icon}
@@ -167,13 +178,15 @@ export default function Home() {
                 <path
                   fill="none"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M11 4H4v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5M9 15L20 4m-5 0h5v5"
                 />
               </svg>
-              <a href="https://game-releasev2.vercel.app/" target="_blank">Demo Link</a>
+              <a href="https://game-releasev2.vercel.app/" target="_blank">
+                Demo Link
+              </a>
             </li>
             <li style={{ backgroundColor: "#87ceeb" }}>
               <svg
@@ -185,13 +198,15 @@ export default function Home() {
                 <path
                   fill="none"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2c2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2a4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6c-.6.6-.6 1.2-.5 2V21"
                 />
               </svg>
-              <a href="https://github.com/jjxnn/game_releasev2" target="_blank">Github</a>
+              <a href="https://github.com/jjxnn/game_releasev2" target="_blank">
+                Github
+              </a>
             </li>
           </ul>
           {/* <Link href="" className={styles.project_more}>
@@ -205,7 +220,10 @@ export default function Home() {
         />
       </section>
 
-      <section className={`${styles.projects_cont} ${styles.round_edge}`} id="project">
+      <section
+        className={`${styles.projects_cont} ${styles.round_edge}`}
+        id="project"
+      >
         <Image
           src={pockeity}
           alt="peeps-profile-pic"
@@ -238,13 +256,15 @@ export default function Home() {
                 <path
                   fill="none"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M11 4H4v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5M9 15L20 4m-5 0h5v5"
                 />
               </svg>
-              <a href="https://pockeity.vercel.app/" target="_blank">Demo Link</a>
+              <a href="https://pockeity.vercel.app/" target="_blank">
+                Demo Link
+              </a>
             </li>
             <li style={{ backgroundColor: "#87ceeb" }}>
               <svg
@@ -256,13 +276,15 @@ export default function Home() {
                 <path
                   fill="none"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2c2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2a4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6c-.6.6-.6 1.2-.5 2V21"
                 />
               </svg>
-              <a href="https://github.com/jjxnn/study-app" target="_blank">Github</a>
+              <a href="https://github.com/jjxnn/study-app" target="_blank">
+                Github
+              </a>
             </li>
           </ul>
 
@@ -286,8 +308,7 @@ export default function Home() {
             for the U.S. Army Central. The website streamline the housing
             application process allowing user to create, edit, and store housing
             documentations.
-
-            <br/>* Due to privacy reasons, there is no public GitHub repo. 
+            <br />* Due to privacy reasons, there is no public GitHub repo.
           </p>
           <ul className={styles.project_action}>
             <li style={{ backgroundColor: "#FF7A5C" }}>
@@ -301,13 +322,15 @@ export default function Home() {
                 <path
                   fill="none"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M11 4H4v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5M9 15L20 4m-5 0h5v5"
                 />
               </svg>
-              <a href="https://demo-haa.onrender.com/" target="_blank">Demo Link</a>
+              <a href="https://demo-haa.onrender.com/" target="_blank">
+                Demo Link
+              </a>
             </li>
           </ul>
           {/* <Link href="" className={styles.project_more}>
@@ -322,7 +345,9 @@ export default function Home() {
       </section>
 
       {/**/}
-      <div className={`${styles.divider} ${styles.round_edge}`} id="about">About Me</div>
+      <div className={`${styles.divider} ${styles.round_edge}`} id="about">
+        About Me
+      </div>
       <section className={` ${styles.about_me_cont} ${styles.round_edge}`}>
         <p>
           I&#39;m a front-end developer from Lexington, SC! My interest in
@@ -332,30 +357,44 @@ export default function Home() {
           web! <br />
           Once front-end sparked my interest, I continue to hone my craft as a
           developer by building projects that focuses on responsiveness and
-          streamlining user experience! I have interned for <b>BlueCross BlueShield
-          SC</b>, where I was able gain experience in DevOps and learned CI/CD. I
-          recently created a website for the <b>U.S. Army Central</b> that streamline
-          the housing application process. These valuable experiences allowed me
-          to grow as a developer and I&#39;m ready to embark on my next learning
-          journey. <br />
-          In my free time, I enjoy baking delicious desserts <span>(my favorite is
-          cheesecake)</span> and play video games. Other times, I love to learn new
-          front-end techniques to add to my own website!
+          streamlining user experience! I have interned for{" "}
+          <b>BlueCross BlueShield SC</b>, where I was able gain experience in
+          DevOps and learned CI/CD. I recently created a website for the{" "}
+          <b>U.S. Army Central</b> that streamline the housing application
+          process. These valuable experiences allowed me to grow as a developer
+          and I&#39;m ready to embark on my next learning journey. <br />
+          In my free time, I enjoy baking delicious desserts{" "}
+          <span>(my favorite is cheesecake)</span> and play video games. Other
+          times, I love to learn new front-end techniques to add to my own
+          website!
         </p>
       </section>
 
       {/**/}
-      <section className={` ${styles.contact_cont} ${styles.round_edge}`} id="contact">
+      <section
+        className={` ${styles.contact_cont} ${styles.round_edge}`}
+        id="contact"
+      >
         <p>Don&#39;t be shy to say hello!</p>
         <p className={styles.contact_para}>
           I&#39;m currently open to front-end development positions. If you have
           any opportunities or projects that I would be a great fit for, feel
-          free to reach me at <b>jennifernguyen0000@gmail.com</b>. Or drop
-          me a message on <span>LinkedIn</span>. I will be delighted to talk to
-          you!
+          free to reach me at <b>jennifernguyen0000@gmail.com</b>. Or drop me a
+          message on{" "}
+          <a href="https://www.linkedin.com/in/jen-nguyen0805/"
+          target="_blank" style={{fontWeight: '700'}}>LinkedIn</a>. I
+          will be delighted to talk to you!
         </p>
-        <Image src={flower} alt="flower-accent" className={`${styles.flower_accent}`}/>
-        <Image src={flower} alt="flower-accent" className={`${styles.flower_accent}`}/>
+        <Image
+          src={flower}
+          alt="flower-accent"
+          className={`${styles.flower_accent}`}
+        />
+        <Image
+          src={flower}
+          alt="flower-accent"
+          className={`${styles.flower_accent}`}
+        />
       </section>
     </main>
   );
