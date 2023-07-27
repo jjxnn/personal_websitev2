@@ -203,7 +203,7 @@ export default function Home() {
         />
       </section>
 
-      <section className={`${styles.projects_cont} ${styles.round_edge}`}>
+      <section className={`${styles.projects_cont} ${styles.round_edge}`} id="project">
         <Image
           src={pockeity}
           alt="peeps-profile-pic"
@@ -343,7 +343,7 @@ export default function Home() {
       </section>
 
       {/**/}
-      <section className={` ${styles.contact_cont} ${styles.round_edge}`}>
+      <section className={` ${styles.contact_cont} ${styles.round_edge}`} id="contact">
         <p>Don&#39;t be shy to say hello!</p>
         <p className={styles.contact_para}>
           I&#39;m currently open to front-end development positions. If you have

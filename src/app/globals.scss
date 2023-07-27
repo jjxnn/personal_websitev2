@@ -48,6 +48,10 @@ a {
     font-size: 1rem;
     padding: 1em;
     list-style-type: none;
+
+    &:hover {
+      font-weight: 700;
+    }
   }
 }
 

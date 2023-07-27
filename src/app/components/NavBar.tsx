@@ -21,9 +21,9 @@ const NavBar = () => {
       <span></span>
     </label>
     <ul className='navigation'>
-          <li>Project</li>
-          <li><Link href="#about" scroll={false}>About</Link></li>
-          <li>Contact</li>
+          <li><Link href="#project">Project</Link></li>
+          <li><Link href="#about">About</Link></li>
+          <li><Link href="#contact">Contact</Link></li>
           <li className='resume-btn'><a href="files/resume.pdf" target="_blank">Resume</a></li>
         </ul>
       </nav>
