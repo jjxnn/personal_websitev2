@@ -5,6 +5,8 @@ import videa from "./img/polaroid3.png";
 import haa from "./img/polaroid2.png";
 import pockeity from "./img/polaroid1.png";
 import Link from "next/link";
+
+import flower from './img/flower.svg'
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -352,6 +354,8 @@ export default function Home() {
           me a message on <span>LinkedIn</span>. I will be delighted to talk to
           you!
         </p>
+        <Image src={flower} alt="flower-accent" className={`${styles.flower_accent}`}/>
+        <Image src={flower} alt="flower-accent" className={`${styles.flower_accent}`}/>
       </section>
     </main>
   );
