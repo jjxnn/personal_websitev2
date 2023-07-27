@@ -132,7 +132,7 @@ export default function Home() {
         className={`${styles.divider} ${styles.round_edge} ${styles.project_divider}`}
       >
         {" "}
-        Featured Projects <Link href="">View More</Link>
+        Featured Projects {/*<Link href="">View More</Link>*/}
       </div>
       <section className={`${styles.projects_cont} ${styles.round_edge}`}>
         <section className={styles.project_desc}>
@@ -192,9 +192,9 @@ export default function Home() {
               <a href="https://github.com/jjxnn/game_releasev2" target="_blank">Github</a>
             </li>
           </ul>
-          <Link href="" className={styles.project_more}>
+          {/* <Link href="" className={styles.project_more}>
             Read More
-          </Link>
+          </Link> */}
         </section>
         <Image
           src={videa}
@@ -264,9 +264,9 @@ export default function Home() {
             </li>
           </ul>
 
-          <Link href="" className={styles.project_more}>
+          {/* <Link href="" className={styles.project_more}>
             Read More
-          </Link>
+          </Link> */}
         </section>
       </section>
 
@@ -308,9 +308,9 @@ export default function Home() {
               <a href="https://demo-haa.onrender.com/" target="_blank">Demo Link</a>
             </li>
           </ul>
-          <Link href="" className={styles.project_more}>
+          {/* <Link href="" className={styles.project_more}>
             Read More
-          </Link>
+          </Link> */}
         </section>
         <Image
           src={haa}
